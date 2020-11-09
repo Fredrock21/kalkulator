@@ -20,9 +20,163 @@ namespace WPFkalkulator
     /// </summary>
     public partial class MainWindow : Window
     {
+        int tot = 0;
+
+     
         public MainWindow()
         {
             InitializeComponent();
+        }
+        private void ett_Click(object sender, RoutedEventArgs e)
+        {
+            if (e.Source is Button button)
+            {
+
+                numerblock.Text += "1";
+            }
+
+
+
+        }
+
+
+
+        private void twå_Click(object sender, RoutedEventArgs e)
+        {
+            if (e.Source is Button button)
+            {
+
+                numerblock.Text += "2";
+            }
+
+        }
+
+        private void tre_Click(object sender, RoutedEventArgs e)
+        {
+            if (e.Source is Button button)
+            {
+
+                numerblock.Text += "3";
+            }
+        }
+
+        private void fyra_Click(object sender, RoutedEventArgs e)
+        {
+            if (e.Source is Button button)
+            {
+
+                numerblock.Text += "4";
+            }
+        }
+
+        private void fem_Click(object sender, RoutedEventArgs e)
+        {
+            if (e.Source is Button button)
+            {
+
+                numerblock.Text += "5";
+            }
+
+        }
+
+        private void sex_Click(object sender, RoutedEventArgs e)
+        {
+            if (e.Source is Button button)
+            {
+
+                numerblock.Text += "6";
+            }
+        }
+
+        private void sju_Click(object sender, RoutedEventArgs e)
+        {
+            if (e.Source is Button button)
+            {
+
+                numerblock.Text += "7";
+            }
+
+        }
+
+        private void åtta_Click(object sender, RoutedEventArgs e)
+        {
+            if (e.Source is Button button)
+            {
+
+                numerblock.Text += "8";
+            }
+
+        }
+        private void nio_Click(object sender, RoutedEventArgs e)
+        {
+            if (e.Source is Button button)
+            {
+
+                numerblock.Text += "9";
+            }
+
+        }
+        private void zero_Click(object sender, RoutedEventArgs e)
+        {
+            if (e.Source is Button button)
+            {
+
+                numerblock.Text += "0";
+            }
+        }
+
+        private void add_Click(object sender, RoutedEventArgs e)
+        {
+            if (e.Source is Button button)
+            {
+                numerblock.Text += "+";
+
+
+            }
+
+
+        }
+
+        private void subtract_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void multiply_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void divide_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void koma_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void minustal_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void enter_Click(object sender, RoutedEventArgs e)
+        {
+
+            if (e.Source is Button button)
+            {
+                numerblock.Text = "";
+
+                numerblock.Text += tot;
+            }
+
         }
     }
 }
