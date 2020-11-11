@@ -180,7 +180,7 @@ namespace WPFkalkulator
 
         private void enter_Click(object sender, RoutedEventArgs e)
         {
-            List<Double> Holare = new List<double>();
+            List<double> Holare = new List<double>();
             List<char> symbol = new List<char>();
 
             if (e.Source is Button button)
