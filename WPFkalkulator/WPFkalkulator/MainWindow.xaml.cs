@@ -188,7 +188,11 @@ namespace WPFkalkulator
                 foreach(var kunter in numerblock.Text)
                 {
 
-                    if (kunter != "+" )
+                    if (kunter != "+" || kunter != "-" || kunter != "-" || kunter != "-")
+                    {
+
+
+                    }
 
 
 
