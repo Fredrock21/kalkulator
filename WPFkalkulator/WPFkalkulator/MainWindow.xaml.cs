@@ -185,19 +185,23 @@ namespace WPFkalkulator
 
             if (e.Source is Button button)
             {
+                string num = "";
+
                 foreach(var kunter in numerblock.Text)
                 {
 
-                    if(kunter != "+" || kunter != "-" || kunter != "-" || kunter != "-")
+                    if(kunter != '+' || kunter != '-' || kunter != '*' || kunter != '/')
                     {
 
-                        Holare.Add(Convert.ToInt32(kunter));
-
+                        num += kunter;                       
                     }
                     else
                     {
-                        symbol.add(kunter);
+                        Holare.Add(Convert.ToInt32(num));
+                        
+                        symbol.Add(kunter);
 
+                        num = "";
                     }
 
 
