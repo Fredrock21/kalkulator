@@ -191,9 +191,14 @@ namespace WPFkalkulator
                     if (kunter != "+" || kunter != "-" || kunter != "-" || kunter != "-")
                     {
 
+                        Holare.Add(Convert.ToInt32(kunter));
 
                     }
+                    else
+                    {
+                        symbol.add(kunter);
 
+                    }
 
 
                 }
