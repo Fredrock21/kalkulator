@@ -188,7 +188,7 @@ namespace WPFkalkulator
                 foreach(var kunter in numerblock.Text)
                 {
 
-                    if (kunter != "+" || kunter != "-" || kunter != "-" || kunter != "-")
+                    if(kunter != "+" || kunter != "-" || kunter != "-" || kunter != "-")
                     {
 
                         Holare.Add(Convert.ToInt32(kunter));
