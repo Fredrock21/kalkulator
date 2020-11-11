@@ -139,32 +139,43 @@ namespace WPFkalkulator
 
         private void subtract_Click(object sender, RoutedEventArgs e)
         {
+            if (e.Source is Button button)
+            {
+                numerblock.Text += "-";
+
+
+            }
 
         }
 
         private void multiply_Click(object sender, RoutedEventArgs e)
         {
+            if (e.Source is Button button)
+            {
+                numerblock.Text += "*";
 
+
+            }
         }
 
         private void divide_Click(object sender, RoutedEventArgs e)
         {
+            if (e.Source is Button button)
+            {
+                numerblock.Text += "/";
 
-        }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
+            }
         }
 
         private void koma_Click(object sender, RoutedEventArgs e)
         {
+            if (e.Source is Button button)
+            {
+                numerblock.Text += ",";
 
-        }
 
-        private void minustal_Click(object sender, RoutedEventArgs e)
-        {
-
+            }
         }
 
         private void enter_Click(object sender, RoutedEventArgs e)
@@ -172,9 +183,28 @@ namespace WPFkalkulator
 
             if (e.Source is Button button)
             {
-                numerblock.Text = "";
+                int sum;
 
-                numerblock.Text += tot;
+                for (int i = 0; i < numerblock.Text.Length; i++)
+                {
+
+
+                    if ()
+                    { 
+                        int tall = Int32.Parse(numerblock.Text);
+
+
+                    }
+
+                   
+                }
+                
+
+
+                numerblock.Text = tall;
+
+                
+
             }
 
         }
