@@ -79,7 +79,7 @@ namespace WPFkalkulator
 
                         char caseSwitch = symbol[indexS];
 
-                        if (symbol[indexS] ==  )
+                        if (symbol[indexS] ==  '')
                         {
                             condition = true;
                         }
