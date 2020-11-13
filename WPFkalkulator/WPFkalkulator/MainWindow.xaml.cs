@@ -22,160 +22,21 @@ namespace WPFkalkulator
     {
         int tot = 0;
 
-     
+
         public MainWindow()
         {
             InitializeComponent();
         }
-        private void ett_Click(object sender, RoutedEventArgs e)
+        private void button_Click(object sender, RoutedEventArgs e)
         {
             if (e.Source is Button button)
             {
 
-                numerblock.Text += "1";
+                numerblock.Text += button.Content;
             }
 
 
 
-        }
-
-
-
-        private void twå_Click(object sender, RoutedEventArgs e)
-        {
-            if (e.Source is Button button)
-            {
-
-                numerblock.Text += "2";
-            }
-
-        }
-
-        private void tre_Click(object sender, RoutedEventArgs e)
-        {
-            if (e.Source is Button button)
-            {
-
-                numerblock.Text += "3";
-            }
-        }
-
-        private void fyra_Click(object sender, RoutedEventArgs e)
-        {
-            if (e.Source is Button button)
-            {
-
-                numerblock.Text += "4";
-            }
-        }
-
-        private void fem_Click(object sender, RoutedEventArgs e)
-        {
-            if (e.Source is Button button)
-            {
-
-                numerblock.Text += "5";
-            }
-
-        }
-
-        private void sex_Click(object sender, RoutedEventArgs e)
-        {
-            if (e.Source is Button button)
-            {
-
-                numerblock.Text += "6";
-            }
-        }
-
-        private void sju_Click(object sender, RoutedEventArgs e)
-        {
-            if (e.Source is Button button)
-            {
-
-                numerblock.Text += "7";
-            }
-
-        }
-
-        private void åtta_Click(object sender, RoutedEventArgs e)
-        {
-            if (e.Source is Button button)
-            {
-
-                numerblock.Text += "8";
-            }
-
-        }
-        private void nio_Click(object sender, RoutedEventArgs e)
-        {
-            if (e.Source is Button button)
-            {
-
-                numerblock.Text += "9";
-            }
-
-        }
-        private void zero_Click(object sender, RoutedEventArgs e)
-        {
-            if (e.Source is Button button)
-            {
-
-                numerblock.Text += "0";
-            }
-        }
-
-        private void add_Click(object sender, RoutedEventArgs e)
-        {
-            if (e.Source is Button button)
-            {
-                numerblock.Text += "+";
-
-
-            }
-
-
-        }
-
-        private void subtract_Click(object sender, RoutedEventArgs e)
-        {
-            if (e.Source is Button button)
-            {
-                numerblock.Text += "-";
-
-
-            }
-
-        }
-
-        private void multiply_Click(object sender, RoutedEventArgs e)
-        {
-            if (e.Source is Button button)
-            {
-                numerblock.Text += "*";
-
-
-            }
-        }
-
-        private void divide_Click(object sender, RoutedEventArgs e)
-        {
-            if (e.Source is Button button)
-            {
-                numerblock.Text += "/";
-
-
-            }
-        }
-
-        private void koma_Click(object sender, RoutedEventArgs e)
-        {
-            if (e.Source is Button button)
-            {
-                numerblock.Text += ",";
-
-
-            }
         }
 
         private void enter_Click(object sender, RoutedEventArgs e)
@@ -187,28 +48,88 @@ namespace WPFkalkulator
             {
                 string num = "";
 
-                foreach(var kunter in numerblock.Text)
+                foreach (var kunter in numerblock.Text)
                 {
 
-                    if(kunter != '+' || kunter != '-' || kunter != '*' || kunter != '/')
+                    if (kunter != '+' || kunter != '-' || kunter != '*' || kunter != '/')
                     {
 
-                        num += kunter;                       
+                        num += kunter;
                     }
                     else
                     {
                         Holare.Add(Convert.ToInt32(num));
-                        
+
                         symbol.Add(kunter);
 
                         num = "";
                     }
 
+                    int indexS = 0;
+                    int indexH = 0;
+                    double sum = 0;
+
+                    sum = Holare[indexH];
+
+                    bool condition = false;
+
+                    while (condition)
+                    {
+                        indexH++;
+
+                        char caseSwitch = symbol[indexS];
+
+                        if (symbol[indexS] ==  )
+                        {
+                            condition = true;
+                        }
+
+                        switch (caseSwitch)
+                        {
+                            case '+':
+
+                                sum += Holare[indexH];
+
+                                break;
+
+                            case '-':
+
+                                sum -= Holare[indexH];
+
+                                break;
+
+                            case '/':
+
+                                sum /= Holare[indexH];
+
+                                break;
+
+                            case '*':
+
+                                sum *= Holare[indexH];
+
+                                break;
+
+
+                            default:
+
+                                Console.WriteLine("Default case");
+
+                                break;
+                        }
+                        indexS++;
+
+
+                    }
+
+                    numerblock.Text = "";
+
+                    numerblock.Text += sum;
+
 
                 }
 
             }
-
         }
     }
 }
