@@ -58,18 +58,20 @@ namespace WPFkalkulator
                     }
                     else
                     {
-                        Holare.Add(Convert.ToInt32(num));
+                        Holare.Add(Convert.ToDouble(num));
 
                         symbol.Add(kunter);
 
                         num = "";
                     }
+                }
 
                     int indexS = 0;
                     int indexH = 0;
                     double sum = 0;
 
                     sum = Holare[indexH];
+                    symbol.Add('C');
 
                     bool condition = false;
 
@@ -79,7 +81,7 @@ namespace WPFkalkulator
 
                         char caseSwitch = symbol[indexS];
 
-                        if (symbol[indexS] ==  '')
+                        if (symbol[indexS] ==  'C')
                         {
                             condition = true;
                         }
@@ -127,7 +129,7 @@ namespace WPFkalkulator
                     numerblock.Text += sum;
 
 
-                }
+                
 
             }
         }
