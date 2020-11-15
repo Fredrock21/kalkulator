@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Diagnostics;
 
 namespace WPFkalkulator
 {
@@ -20,7 +21,7 @@ namespace WPFkalkulator
     /// </summary>
     public partial class MainWindow : Window
     {
-        int tot = 0;
+        
 
 
         public MainWindow()
@@ -46,9 +47,13 @@ namespace WPFkalkulator
 
             if (e.Source is Button button)
             {
+                
                 string num = "";
+                char[] numerchar = numerblock.Text.ToCharArray();
+                
+                
 
-                foreach (var kunter in numerblock.Text)
+                foreach (char kunter in numerchar)
                 {
 
                     if (kunter != '+' || kunter != '-' || kunter != '*' || kunter != '/')
@@ -63,14 +68,21 @@ namespace WPFkalkulator
                         symbol.Add(kunter);
 
                         num = "";
+
+                        
                     }
+
+                    
                 }
+                
+
+                
 
                     int indexS = 0;
                     int indexH = 0;
                     double sum = 0;
 
-                    sum = Holare[indexH];
+                    numerblock.Text = Holare.Count.ToString();
                     symbol.Add('C');
 
                     bool condition = false;
@@ -124,10 +136,7 @@ namespace WPFkalkulator
 
                     }
 
-                    numerblock.Text = "";
-
-                    numerblock.Text += sum;
-
+                    //numerblock.Text = sum.ToString();
 
                 
 
