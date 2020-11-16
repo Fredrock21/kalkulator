@@ -40,9 +40,9 @@
         <Button Click="button_Click" Name="subtract" Grid.Row="2" Grid.Column="4" Content="-" FontSize="40" Margin="5,5,5,5" />
         <Button Click="button_Click" Name="multiply" Grid.Row="3" Grid.Column="4" Content="*" FontSize="40" Margin="5,5,5,5" />
         <Button Click="button_Click" Name="divide" Grid.Row="4" Grid.Column="4" Content="/" FontSize="40" Margin="5,5,5,5" />
-        <Button Click="button_Click" Name="koma" Grid.Row="4" Grid.Column="1" Content="." FontSize="40" Margin="5,5,5,5" />
+        <Button Click="button_Click" Name="koma" Grid.Row="4" Grid.Column="1" Content="," FontSize="40" Margin="5,5,5,5" />
 
-        <Button Click="button_Click" Name="koma" Grid.Row="4" Grid.Column="0" Content="." FontSize="40" Margin="5,5,5,5" />
+        <Button Click="Cler_Click" Name="clar" Grid.Row="4" Grid.Column="0" Content="Cler" FontSize="40" Margin="5,5,5,5" />
         
         <Button Click="enter_Click" Name="enter" Grid.Row="4" Grid.Column="3" Content="=" FontSize="40" Margin="5,5,5,5" />
 

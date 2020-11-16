@@ -139,5 +139,17 @@ namespace WPFkalkulator
 
             }
         }
+        private void Cler_Click(object sender, RoutedEventArgs e)
+        {
+            if (e.Source is Button button)
+            {
+
+                numerblock.Text = "";
+            }
+
+
+
+        }
+
     }
 }
