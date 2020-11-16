@@ -23,7 +23,7 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <TextBlock Name="numerblock" Grid.ColumnSpan="6" Margin="100,10,100,10" FontSize="30"/>
+        <TextBlock Name="numerblock" Grid.ColumnSpan="6" Margin="100,10,100,10" FontSize="30" Background="RosyBrown"/>
 
         <Button Click="button_Click" Name="ett" Grid.Row="1" Grid.Column="1" Content="1" FontSize="40" Margin="5,5,5,5"/>
         <Button Click="button_Click" Name="twå" Grid.Row="1" Grid.Column="2" Content="2" FontSize="40" Margin="5,5,5,5"/>
