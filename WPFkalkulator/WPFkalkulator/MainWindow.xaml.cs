@@ -53,10 +53,10 @@ namespace WPFkalkulator
                 
                 
 
-                foreach (char kunter in numerblock.Text)
+                foreach (var kunter in numerblock.Text)
                 {
 
-                    if (kunter != '+' || kunter != '-' || kunter != '*' || kunter != '/')
+                    if (kunter != '+' && kunter != '-' && kunter != '*' && kunter != '/')
                     {
 
                         num += kunter;
@@ -69,23 +69,20 @@ namespace WPFkalkulator
 
                         num = "";
 
-                        
+                        continue;                        
                     }
-
-                    
                 }
-                
 
-                
+                Holare.Add(Convert.ToDouble(num));
 
-                    int indexS = 0;
+                int indexS = 0;
                     int indexH = 0;
                     double sum = 0;
 
-                    numerblock.Text = Holare.Count.ToString();
+                    sum = Holare[indexH];
                     symbol.Add('C');
 
-                    bool condition = false;
+                    bool condition = true;
 
                     while (condition)
                     {
@@ -95,7 +92,7 @@ namespace WPFkalkulator
 
                         if (symbol[indexS] ==  'C')
                         {
-                            condition = true;
+                            break;
                         }
 
                         switch (caseSwitch)
@@ -131,12 +128,12 @@ namespace WPFkalkulator
 
                                 break;
                         }
-                        indexS++;
-
+                    indexS++;
+                    
 
                     }
 
-                    //numerblock.Text = sum.ToString();
+                    numerblock.Text = sum.ToString();
 
                 
 
