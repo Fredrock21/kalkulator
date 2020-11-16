@@ -49,11 +49,11 @@ namespace WPFkalkulator
             {
                 
                 string num = "";
-                char[] numerchar = numerblock.Text.ToCharArray();
+                numerblock.Text.ToCharArray();
                 
                 
 
-                foreach (char kunter in numerchar)
+                foreach (char kunter in numerblock.Text)
                 {
 
                     if (kunter != '+' || kunter != '-' || kunter != '*' || kunter != '/')
