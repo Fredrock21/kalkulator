@@ -5,10 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFkalkulator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Background="DimGray">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
             <ColumnDefinition/>
             <ColumnDefinition/>
             <ColumnDefinition/>
@@ -23,28 +22,33 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <TextBlock Name="numerblock" Grid.ColumnSpan="6" Margin="100,10,100,10" FontSize="30" Background="RosyBrown"/>
+        <TextBlock Name="numerblock" Grid.ColumnSpan="5" Margin="100,10,100,10" FontSize="30" Background="OrangeRed"/>
 
-        <Button Click="button_Click" Name="ett" Grid.Row="1" Grid.Column="1" Content="1" FontSize="40" Margin="5,5,5,5"/>
-        <Button Click="button_Click" Name="twå" Grid.Row="1" Grid.Column="2" Content="2" FontSize="40" Margin="5,5,5,5"/>
-        <Button Click="button_Click" Name="tre" Grid.Row="1" Grid.Column="3" Content="3" FontSize="40" Margin="5,5,5,5" />
-        <Button Click="button_Click" Name="fyra" Grid.Row="2" Grid.Column="1" Content="4" FontSize="40" Margin="5,5,5,5" />
-        <Button Click="button_Click" Name="fem" Grid.Row="2" Grid.Column="2" Content="5" FontSize="40" Margin="5,5,5,5"/>
-        <Button Click="button_Click" Name="sex" Grid.Row="2" Grid.Column="3" Content="6" FontSize="40" Margin="5,5,5,5" />
-        <Button Click="button_Click" Name="sju" Grid.Row="3" Grid.Column="1" Content="7" FontSize="40" Margin="5,5,5,5"/>
-        <Button Click="button_Click" Name="åtta" Grid.Row="3" Grid.Column="2" Content="8" FontSize="40" Margin="5,5,5,5" />
-        <Button Click="button_Click" Name="nio" Grid.Row="3" Grid.Column="3" Content="9" FontSize="40" Margin="5,5,5,5" />
-        <Button Click="button_Click" Name="zero" Grid.Row="4" Grid.Column="2" Content="0" FontSize="40" Margin="5,5,5,5" />
+        <Button Click="button_Click" Name="ett" Grid.Row="1" Grid.Column="1" Content="1" FontSize="40" Background="Yellow" Margin="5,5,5,5"/>
+        <Button Click="button_Click" Name="twå" Grid.Row="1" Grid.Column="2" Content="2" FontSize="40" Background="Yellow" Margin="5,5,5,5"/>
+        <Button Click="button_Click" Name="tre" Grid.Row="1" Grid.Column="3" Content="3" FontSize="40" Background="Yellow" Margin="5,5,5,5" />
+        <Button Click="button_Click" Name="fyra" Grid.Row="2" Grid.Column="1" Content="4" FontSize="40" Background="Yellow" Margin="5,5,5,5" />
+        <Button Click="button_Click" Name="fem" Grid.Row="2" Grid.Column="2" Content="5" FontSize="40" Background="Yellow" Margin="5,5,5,5"/>
+        <Button Click="button_Click" Name="sex" Grid.Row="2" Grid.Column="3" Content="6" FontSize="40" Background="Yellow" Margin="5,5,5,5" />
+        <Button Click="button_Click" Name="sju" Grid.Row="3" Grid.Column="1" Content="7" FontSize="40" Background="Yellow" Margin="5,5,5,5"/>
+        <Button Click="button_Click" Name="åtta" Grid.Row="3" Grid.Column="2" Content="8" FontSize="40" Background="Yellow" Margin="5,5,5,5" />
+        <Button Click="button_Click" Name="nio" Grid.Row="3" Grid.Column="3" Content="9" FontSize="40" Background="Yellow" Margin="5,5,5,5" />
+        <Button Click="button_Click" Name="zero" Grid.Row="4" Grid.Column="2" Content="0" FontSize="40" Background="Yellow" Margin="5,5,5,5" />
 
-        <Button Click="button_Click" Name="add" Grid.Row="1" Grid.Column="4" Content="+" FontSize="40" Margin="5,5,5,5" />
-        <Button Click="button_Click" Name="subtract" Grid.Row="2" Grid.Column="4" Content="-" FontSize="40" Margin="5,5,5,5" />
-        <Button Click="button_Click" Name="multiply" Grid.Row="3" Grid.Column="4" Content="*" FontSize="40" Margin="5,5,5,5" />
-        <Button Click="button_Click" Name="divide" Grid.Row="4" Grid.Column="4" Content="/" FontSize="40" Margin="5,5,5,5" />
-        <Button Click="button_Click" Name="koma" Grid.Row="4" Grid.Column="1" Content="," FontSize="40" Margin="5,5,5,5" />
+        <Button Click="button_Click" Name="add" Grid.Row="1" Grid.Column="4" Content="+" FontSize="40" Background="Gold" Margin="5,5,5,5" />
+        <Button Click="button_Click" Name="subtract" Grid.Row="2" Grid.Column="4" Content="-" FontSize="40" Background="Gold" Margin="5,5,5,5" />
+        <Button Click="button_Click" Name="multiply" Grid.Row="3" Grid.Column="4" Content="*" FontSize="40" Background="Gold" Margin="5,5,5,5" />
+        <Button Click="button_Click" Name="divide" Grid.Row="4" Grid.Column="4" Content="/" FontSize="40" Background="Gold" Margin="5,5,5,5" />
+        <Button Click="button_Click" Name="koma" Grid.Row="4" Grid.Column="1" Content="," FontSize="40" Background="Gold" Margin="5,5,5,5" />
+        <Button Click="upphöt_Click" Name="upptil2" Grid.Row="3" Grid.Column="0" Content="^2" FontSize="40" Background="Gold" ToolTip="upphöjt med 2" Margin="5,5,5,5"  />
+        <Button Click="button_Click" Name="pi" Grid.Row="1" Grid.Column="0" Content="π" FontSize="40" Background="Gold" Margin="5,5,5,5" />
+        <Button Click="rot_Click" Name="rotenur" Grid.Row="2" Grid.Column="0" Content="√" FontSize="40" Background="Gold" ToolTip="roten ur komer bara funka om du seter den efter talet" Margin="5,5,5,5"  />
 
-        <Button Click="Cler_Click" Name="clar" Grid.Row="4" Grid.Column="0" Content="Clear" FontSize="40" Margin="5,5,5,5" />
+
+        <Button Click="Cler_Click" Name="clar" Grid.Row="4" Grid.Column="0" Content="Clear" FontSize="40" Background="Gold" ToolTip="Ta bort matte" Margin="5,5,5,5" />
         
-        <Button Click="enter_Click" Name="enter" Grid.Row="4" Grid.Column="3" Content="=" FontSize="40" Margin="5,5,5,5" />
+        
+        <Button Click="enter_Click" Name="enter" Grid.Row="4" Grid.Column="3" Content="=" FontSize="40" Background="Goldenrod" Margin="5,5,5,5" />
 
     </Grid>
 </Window>

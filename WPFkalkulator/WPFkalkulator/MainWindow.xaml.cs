@@ -56,10 +56,31 @@ namespace WPFkalkulator
                 foreach (var kunter in numerblock.Text)
                 {
 
-                    if (kunter != '+' && kunter != '-' && kunter != '*' && kunter != '/')
+                    if (kunter != '+' && kunter != '-' && kunter != '*' && kunter != '/' && kunter != '^' && kunter != 'π' && kunter != '√')
                     {
 
                         num += kunter;
+                    }
+                    else if(kunter == '^'){
+                        double upp = Convert.ToDouble(num);
+                        double nåt = 0;
+
+                        nåt = upp * upp;
+
+                        num = Convert.ToString(nåt);
+                    }
+                    else if (kunter == '√')
+                    {
+                        double upp = Convert.ToDouble(num);
+                        double nåt = 0;
+
+                        nåt = upp.
+
+                        num = Convert.ToString(nåt);
+                    }
+                    else if (kunter == 'π')
+                    {
+                        num = "3,14159295";
                     }
                     else
                     {
@@ -148,6 +169,28 @@ namespace WPFkalkulator
             }
 
 
+
+        }
+        private void upphöt_Click(object sender, RoutedEventArgs e)
+        {
+            if (e.Source is Button button)
+            {
+
+                numerblock.Text += "^";
+            }
+        }
+        private void rot_Click(object sender, RoutedEventArgs e)
+        {
+            if (e.Source is Button button)
+            {
+
+                numerblock.Text += "√";
+            }
+        }
+        
+
+        private void upptil2_MouseEnter(object sender, MouseEventArgs e)
+        {
 
         }
 
