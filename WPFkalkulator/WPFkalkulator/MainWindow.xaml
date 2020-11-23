@@ -22,7 +22,7 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <TextBlock Name="numerblock" Grid.ColumnSpan="5" Margin="100,10,100,10" FontSize="30" Background="OrangeRed"/>
+        <TextBlock Name="numerblock" Grid.ColumnSpan="4" Margin="40,10,40,10" FontSize="50" Background="OrangeRed"/>
 
         <Button Click="button_Click" Name="ett" Grid.Row="1" Grid.Column="1" Content="1" FontSize="40" Background="Yellow" Margin="5,5,5,5"/>
         <Button Click="button_Click" Name="twå" Grid.Row="1" Grid.Column="2" Content="2" FontSize="40" Background="Yellow" Margin="5,5,5,5"/>
@@ -43,7 +43,7 @@
         <Button Click="upphöt_Click" Name="upptil2" Grid.Row="3" Grid.Column="0" Content="^2" FontSize="40" Background="Gold" ToolTip="upphöjt med 2" Margin="5,5,5,5"  />
         <Button Click="button_Click" Name="pi" Grid.Row="1" Grid.Column="0" Content="π" FontSize="40" Background="Gold" Margin="5,5,5,5" />
         <Button Click="rot_Click" Name="rotenur" Grid.Row="2" Grid.Column="0" Content="√" FontSize="40" Background="Gold" ToolTip="roten ur komer bara funka om du seter den efter talet" Margin="5,5,5,5"  />
-
+        <Button Click="button_Click" Name="prosent" Grid.Row="0" Grid.Column="5" Content="%" FontSize="40" Background="Gold" Margin="5,5,5,5" />
 
         <Button Click="Cler_Click" Name="clar" Grid.Row="4" Grid.Column="0" Content="Clear" FontSize="40" Background="Gold" ToolTip="Ta bort matte" Margin="5,5,5,5" />
         

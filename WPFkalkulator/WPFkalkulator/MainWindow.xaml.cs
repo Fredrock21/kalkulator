@@ -57,7 +57,7 @@ namespace WPFkalkulator
                 foreach (var kunter in numerblock.Text)
                 {
 
-                    if (kunter != '+' && kunter != '-' && kunter != '*' && kunter != '/' && kunter != '^' && kunter != 'π' && kunter != '√')
+                    if (kunter != '+' && kunter != '-' && kunter != '*' && kunter != '/' && kunter != '^' && kunter != 'π' && kunter != '√' && kunter != '%')
                     {
 
                         num += kunter;
@@ -81,7 +81,16 @@ namespace WPFkalkulator
                     }
                     else if (kunter == 'π')
                     {
-                        num = "3,14159295";
+                        num = "3,14159265";
+                    }
+                    else if (kunter == '%')
+                    {
+                        double upp = Convert.ToDouble(num);
+                        double nåt = 0;
+
+                        nåt = upp/100;
+
+                        num = Convert.ToString(nåt);
                     }
                     else
                     {
