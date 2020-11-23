@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Diagnostics;
+using static System.Math; 
 
 namespace WPFkalkulator
 {
@@ -74,7 +75,7 @@ namespace WPFkalkulator
                         double upp = Convert.ToDouble(num);
                         double nåt = 0;
 
-                        nåt = upp.
+                        nåt = Math.Sqrt(upp);
 
                         num = Convert.ToString(nåt);
                     }
