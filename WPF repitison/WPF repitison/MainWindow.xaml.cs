@@ -24,5 +24,22 @@ namespace WPF_repitison
         {
             InitializeComponent();
         }
+        
+        private void Click_ok(object sender, RoutedEventArgs e)
+        {
+            if(e.Source is Button button)
+            {
+                if(okbock.Text == "Allt är helt okej")
+                {
+                    okbock.Text = "";
+
+                }
+
+                okbock.Text = "Allt är helt okej";
+
+            }
+            
+
+        }
     }
 }

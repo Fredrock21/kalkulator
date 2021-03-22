@@ -7,6 +7,22 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Name="okbock" Grid.ColumnSpan="3" Margin="10" FontSize="50" />
+
+        <Button Click="Click_ok" Name="ok" Grid.Row="1" Grid.Column="1" Content="KO" FontSize="70" />
+
+
+
     </Grid>
 </Window>
