@@ -31,7 +31,7 @@ namespace WPF_repitison
             {
                 if(okbock.Text == "Allt är helt okej")
                 {
-                    okbock.Text = "";
+                    okbock.Text = button.Content; // problem vet inte varför
 
                 }
 
