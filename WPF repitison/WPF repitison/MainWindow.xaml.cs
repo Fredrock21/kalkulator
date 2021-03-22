@@ -29,13 +29,13 @@ namespace WPF_repitison
         {
             if(e.Source is Button button)
             {
-                if(okbock.Text == "Allt är helt okej")
+                if(textbock.Text == "Allt är helt okej")
                 {
-                    okbock.Text = button.Content; // problem vet inte varför
+                    textbock.Text = button.Content; // problem vet inte varför
 
                 }
 
-                okbock.Text = "Allt är helt okej";
+                textbock.Text = "Allt är helt okej";
 
             }
             
