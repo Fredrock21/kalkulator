@@ -31,11 +31,15 @@ namespace WPF_repitison
             {
                 if(textbock.Text == "Allt är helt okej")
                 {
-                    textbock.Text = button.Content; // problem vet inte varför
+                    textbock.Text = button.Content.ToString(); // problem vet inte varför
 
                 }
+                else
+                {
+                    textbock.Text = "Allt är helt okej";
+                }
 
-                textbock.Text = "Allt är helt okej";
+                
 
             }
             

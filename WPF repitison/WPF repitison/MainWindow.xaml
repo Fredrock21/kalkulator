@@ -20,7 +20,7 @@
 
         <TextBlock Name="textbock" Grid.ColumnSpan="3" Margin="10" FontSize="50" Background="IndianRed" />
 
-        <Button Click="Click_ok" Name="ok" Grid.Row="1" Grid.Column="1" Content="KO" FontSize="70" Background="AliceBlue"/>
+        <Button Click="Click_ok" Name="ok" Grid.Row="1" Grid.Column="1" Content="OK" FontSize="70" Background="AliceBlue"/>
 
 
 
