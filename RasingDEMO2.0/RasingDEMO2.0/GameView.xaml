@@ -6,46 +6,44 @@
              xmlns:local="clr-namespace:RasingDEMO2._0"
              mc:Ignorable="d" 
              d:DesignHeight="350" d:DesignWidth="500">
-    <Grid>
 
-        <Canvas Name="MyCanvas" Focusable="True" KeyDown="Stering" KeyUp="Crusing" Background="Gray" >
-            <Image Height="50" Width="20" Source="bilder/WhiteLine.png" Canvas.Left="110" Canvas.Top="-60" Tag="Line5"/>
-            <Image Height="50" Width="20" Source="bilder/WhiteLine.png" Canvas.Left="110" Canvas.Top="30" Tag="Line4"/>
-            <Image Height="50" Width="20" Source="bilder/WhiteLine.png" Canvas.Left="110" Canvas.Top="120" Tag="Line3"/>
-            <Image Height="50" Width="20" Source="bilder/WhiteLine.png" Canvas.Left="110" Canvas.Top="210" Tag="Line2"/>
-            <Image Height="50" Width="20" Source="bilder/WhiteLine.png" Canvas.Left="110" Canvas.Top="300" Tag="Line1"/>
+    <Canvas Name="MyCanvas" Focusable="True" KeyDown="Stering" KeyUp="Crusing" Background="Gray" >
+        <Image Height="50" Width="20" Source="bilder/WhiteLine.png" Canvas.Left="110" Canvas.Top="-60" Tag="Line5"/>
+        <Image Height="50" Width="20" Source="bilder/WhiteLine.png" Canvas.Left="110" Canvas.Top="30" Tag="Line4"/>
+        <Image Height="50" Width="20" Source="bilder/WhiteLine.png" Canvas.Left="110" Canvas.Top="120" Tag="Line3"/>
+        <Image Height="50" Width="20" Source="bilder/WhiteLine.png" Canvas.Left="110" Canvas.Top="210" Tag="Line2"/>
+        <Image Height="50" Width="20" Source="bilder/WhiteLine.png" Canvas.Left="110" Canvas.Top="300" Tag="Line1"/>
 
-            <Image Height="50" Width="20" Source="bilder/WhiteLine.png" Canvas.Left="235" Canvas.Top="-60" Tag="Line5"/>
-            <Image Height="50" Width="20" Source="bilder/WhiteLine.png" Canvas.Left="235" Canvas.Top="30" Tag="Line4"/>
-            <Image Height="50" Width="20" Source="bilder/WhiteLine.png" Canvas.Left="235" Canvas.Top="120" Tag="Line3"/>
-            <Image Height="50" Width="20" Source="bilder/WhiteLine.png" Canvas.Left="235" Canvas.Top="210" Tag="Line2"/>
-            <Image Height="50" Width="20" Source="bilder/WhiteLine.png" Canvas.Left="235" Canvas.Top="300" Tag="Line1"/>
+        <Image Height="50" Width="20" Source="bilder/WhiteLine.png" Canvas.Left="235" Canvas.Top="-60" Tag="Line5"/>
+        <Image Height="50" Width="20" Source="bilder/WhiteLine.png" Canvas.Left="235" Canvas.Top="30" Tag="Line4"/>
+        <Image Height="50" Width="20" Source="bilder/WhiteLine.png" Canvas.Left="235" Canvas.Top="120" Tag="Line3"/>
+        <Image Height="50" Width="20" Source="bilder/WhiteLine.png" Canvas.Left="235" Canvas.Top="210" Tag="Line2"/>
+        <Image Height="50" Width="20" Source="bilder/WhiteLine.png" Canvas.Left="235" Canvas.Top="300" Tag="Line1"/>
 
-            <Image Height="50" Width="20" Source="bilder/WhiteLine.png" Canvas.Left="360" Canvas.Top="-60" Tag="Line5"/>
-            <Image Height="50" Width="20" Source="bilder/WhiteLine.png" Canvas.Left="360" Canvas.Top="30" Tag="Line4"/>
-            <Image Height="50" Width="20" Source="bilder/WhiteLine.png" Canvas.Left="360" Canvas.Top="120" Tag="Line3"/>
-            <Image Height="50" Width="20" Source="bilder/WhiteLine.png" Canvas.Left="360" Canvas.Top="210" Tag="Line2"/>
-            <Image Height="50" Width="20" Source="bilder/WhiteLine.png" Canvas.Left="360" Canvas.Top="300" Tag="Line1"/>
+        <Image Height="50" Width="20" Source="bilder/WhiteLine.png" Canvas.Left="360" Canvas.Top="-60" Tag="Line5"/>
+        <Image Height="50" Width="20" Source="bilder/WhiteLine.png" Canvas.Left="360" Canvas.Top="30" Tag="Line4"/>
+        <Image Height="50" Width="20" Source="bilder/WhiteLine.png" Canvas.Left="360" Canvas.Top="120" Tag="Line3"/>
+        <Image Height="50" Width="20" Source="bilder/WhiteLine.png" Canvas.Left="360" Canvas.Top="210" Tag="Line2"/>
+        <Image Height="50" Width="20" Source="bilder/WhiteLine.png" Canvas.Left="360" Canvas.Top="300" Tag="Line1"/>
 
-            <Image Name="car1" Height="100" Width="55" Source="bilder/Car1.png" Canvas.Left="30" Canvas.Top="-340" Tag="car1" />
-            <Image Name="car2" Height="100" Width="55" Source="bilder/Car1.png" Canvas.Left="160" Canvas.Top="-100" Tag="car2" />
-            <Image Name="car3" Height="100" Width="55" Source="bilder/Car1.png" Canvas.Left="280" Canvas.Top="-460" Tag="car3" />
-            <Image Name="car4" Height="100" Width="55" Source="bilder/Car1.png" Canvas.Left="400" Canvas.Top="-220" Tag="car4" />
-
+        <Image Name="car1" Height="100" Width="55" Source="bilder/Car1.png" Canvas.Left="30" Canvas.Top="-340" Tag="car1" />
+        <Image Name="car2" Height="100" Width="55" Source="bilder/Car1.png" Canvas.Left="160" Canvas.Top="-100" Tag="car2" />
+        <Image Name="car3" Height="100" Width="55" Source="bilder/Car1.png" Canvas.Left="280" Canvas.Top="-460" Tag="car3" />
+        <Image Name="car4" Height="100" Width="55" Source="bilder/Car1.png" Canvas.Left="400" Canvas.Top="-220" Tag="car4" />
 
 
-            <Image Name="F1" Height="90" Width="50" Source="bilder/F1.png" Canvas.Left="220" Canvas.Top="205" Tag="Reacer" RenderTransformOrigin="0.5,0.5" >
+
+        <Image Name="F1" Height="90" Width="50" Source="bilder/F1.png" Canvas.Left="220" Canvas.Top="205" Tag="Reacer" RenderTransformOrigin="0.5,0.5" >
 
 
-            </Image>
+        </Image>
 
-            <Label Name="livs" FontSize="22" FontWeight="ExtraBold" Content="lifes: 1"  Canvas.Top="1" />
-            <Label Name="distanc" FontSize="18" FontWeight="ExtraBold" Content="Distanc:" Canvas.Top="285" />
-
+        <Label Name="livs" FontSize="22" FontWeight="ExtraBold" Content="lifes: 1"  Canvas.Top="1" />
+        <Label Name="distanc" FontSize="18" FontWeight="ExtraBold" Content="Distanc:" Canvas.Top="285" />
 
 
 
 
-        </Canvas>
-    </Grid>
+
+    </Canvas>
 </UserControl>

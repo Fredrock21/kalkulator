@@ -32,14 +32,14 @@ namespace RasingDEMO2._0
         }
         private void start_button(object sender, RoutedEventArgs e)
         {
-
-            frame.NavigationService.Navigate(null);
-
             var gamew = new GameView();
 
-            frame.NavigationService.Navigate(gamew);
-
-            
+            Grid.SetColumn(gamew, 1);
+            Grid.SetRow(gamew, 0);
+            Grid.SetColumnSpan(gamew, 5);
+            Grid.SetRowSpan(gamew, 9);
+            gamew.Focusable = true;
+            root.Children.Add(gamew);
         }
 
     }

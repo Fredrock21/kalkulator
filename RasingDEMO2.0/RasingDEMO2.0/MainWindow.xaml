@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:RasingDEMO2._0"
         mc:Ignorable="d"
         Title="Window1"  Height="350" Width="600">
-    <Grid  Background="Wheat">
+    <Grid  Background="Wheat" Name="root">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
@@ -33,7 +33,7 @@
         <Button Click="start_button" Name="ett" Grid.Row="1" Grid.Column="0" Content="Star" FontSize="15" Background="Gray" Margin="1,1,1,1">
         </Button>
 
-        <Frame x:Name="frame" Grid.RowSpan="9" Background="Brown" Grid.Column="1" Grid.ColumnSpan="5" Height="350"/>
+        
         
     </Grid>
 </Window>

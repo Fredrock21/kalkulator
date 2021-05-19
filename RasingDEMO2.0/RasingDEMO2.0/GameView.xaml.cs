@@ -95,18 +95,16 @@ namespace RasingDEMO2._0
             {
                 moveX = stering._stering(sender, e, moveX, F1);
             }
+            else if (e.Key == Key.R)
+            {
+                StartGame();
+            }
             else
             {
                 moveY = accelerates._accelerates(sender, e, moveY, F1);
             }
-
-            if (e.Key == Key.R)
-            {
-                StartGame();
-            }
-
-
         }
+
         private void Crusing(object sender, KeyEventArgs e)
         {
             F1.RenderTransform = new RotateTransform(0); // steller hastighet till 0 
