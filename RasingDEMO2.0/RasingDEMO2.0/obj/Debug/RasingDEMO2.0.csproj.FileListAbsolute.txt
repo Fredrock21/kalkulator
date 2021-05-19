@@ -1,0 +1,16 @@
+C:\Users\fredrik.nilsson10\Documents\GitHub\kalkulator\RasingDEMO2.0\RasingDEMO2.0\bin\Debug\RasingDEMO2.0.exe.config
+C:\Users\fredrik.nilsson10\Documents\GitHub\kalkulator\RasingDEMO2.0\RasingDEMO2.0\bin\Debug\RasingDEMO2.0.exe
+C:\Users\fredrik.nilsson10\Documents\GitHub\kalkulator\RasingDEMO2.0\RasingDEMO2.0\bin\Debug\RasingDEMO2.0.pdb
+C:\Users\fredrik.nilsson10\Documents\GitHub\kalkulator\RasingDEMO2.0\RasingDEMO2.0\obj\Debug\MainWindow.g.cs
+C:\Users\fredrik.nilsson10\Documents\GitHub\kalkulator\RasingDEMO2.0\RasingDEMO2.0\obj\Debug\App.g.cs
+C:\Users\fredrik.nilsson10\Documents\GitHub\kalkulator\RasingDEMO2.0\RasingDEMO2.0\obj\Debug\RasingDEMO2.0_MarkupCompile.cache
+C:\Users\fredrik.nilsson10\Documents\GitHub\kalkulator\RasingDEMO2.0\RasingDEMO2.0\obj\Debug\RasingDEMO2.0_MarkupCompile.lref
+C:\Users\fredrik.nilsson10\Documents\GitHub\kalkulator\RasingDEMO2.0\RasingDEMO2.0\obj\Debug\MainWindow.baml
+C:\Users\fredrik.nilsson10\Documents\GitHub\kalkulator\RasingDEMO2.0\RasingDEMO2.0\obj\Debug\RasingDEMO2.0.g.resources
+C:\Users\fredrik.nilsson10\Documents\GitHub\kalkulator\RasingDEMO2.0\RasingDEMO2.0\obj\Debug\RasingDEMO2._0.Properties.Resources.resources
+C:\Users\fredrik.nilsson10\Documents\GitHub\kalkulator\RasingDEMO2.0\RasingDEMO2.0\obj\Debug\RasingDEMO2.0.csproj.GenerateResource.cache
+C:\Users\fredrik.nilsson10\Documents\GitHub\kalkulator\RasingDEMO2.0\RasingDEMO2.0\obj\Debug\RasingDEMO2.0.csproj.CoreCompileInputs.cache
+C:\Users\fredrik.nilsson10\Documents\GitHub\kalkulator\RasingDEMO2.0\RasingDEMO2.0\obj\Debug\RasingDEMO2.0.exe
+C:\Users\fredrik.nilsson10\Documents\GitHub\kalkulator\RasingDEMO2.0\RasingDEMO2.0\obj\Debug\RasingDEMO2.0.pdb
+C:\Users\fredrik.nilsson10\Documents\GitHub\kalkulator\RasingDEMO2.0\RasingDEMO2.0\obj\Debug\GameView.g.cs
+C:\Users\fredrik.nilsson10\Documents\GitHub\kalkulator\RasingDEMO2.0\RasingDEMO2.0\obj\Debug\GameView.baml

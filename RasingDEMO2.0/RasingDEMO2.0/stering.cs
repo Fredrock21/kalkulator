@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System;
@@ -18,29 +17,26 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 using System.Windows.Threading;
-
-namespace RasingDEMO2._0
+namespace RasingDEMO2
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
+    class stering
     {
-        public MainWindow()
+        static public int _stering(object sender, KeyEventArgs e, int moveX, Image F1)
         {
-            InitializeComponent();
+            if (e.Key == Key.Left)
+            {
+                F1.RenderTransform = new RotateTransform(-5);
+                moveX = -5;
+            }
+
+            if (e.Key == Key.Right)
+            {
+                F1.RenderTransform = new RotateTransform(5);
+                moveX = 5;
+            }
+
+            return moveX;
+
         }
-        private void start_button(object sender, RoutedEventArgs e)
-        {
-
-            frame.NavigationService.Navigate(null);
-
-            var gamew = new GameView();
-
-            frame.NavigationService.Navigate(gamew);
-
-            
-        }
-
     }
 }

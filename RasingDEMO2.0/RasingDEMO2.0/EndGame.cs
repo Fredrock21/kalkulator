@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System;
@@ -19,28 +18,20 @@ using System.Windows.Shapes;
 
 using System.Windows.Threading;
 
-namespace RasingDEMO2._0
+namespace RasingDEMO2
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
+    static public class EndGame
     {
-        public MainWindow()
-        {
-            InitializeComponent();
-        }
-        private void start_button(object sender, RoutedEventArgs e)
+
+        static public void endgame(DispatcherTimer gameTimer, int lives, Label livs)
         {
 
-            frame.NavigationService.Navigate(null);
+            gameTimer.Stop();
 
-            var gamew = new GameView();
+            lives = 0;
+            livs.Content = "lives: " + lives + " press R to start agen.";
 
-            frame.NavigationService.Navigate(gamew);
 
-            
         }
-
     }
 }

@@ -34,10 +34,6 @@
         </Button>
 
         <Frame x:Name="frame" Grid.RowSpan="9" Background="Brown" Grid.Column="1" Grid.ColumnSpan="5" Height="350"/>
-
-
-
-
-
+        
     </Grid>
 </Window>
